@@ -11,4 +11,8 @@ You can find the notes in this repo.
 
 ## Contribution
 
-If you find any mistakes correct the markdown files by making [GitHub](https://github.com) account.
+If you find any mistakes correct the markdown files by making [GitHub](https://github.com) account.<br>
+<strong align='center'>OR</strong>
+Email at [ssannssarrai@gmail.com](ssannssarrai@gmail.com)
+
+
