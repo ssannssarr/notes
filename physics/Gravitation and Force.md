@@ -296,25 +296,29 @@ $$
 Therefore,
 
 $$
+\begin{aligned}
 \frac{g_M}{g_E}
-=
+&=
 \frac{M_M}{M_E}
 \frac{R_E^2}{R_M^2}
+\end{aligned}
 $$
 
 Substituting:
 
 $$
+\begin{aligned}
 \frac{g_M}{g_E}
-=
+&=
 \frac1{80}
-\left(\frac{R_E}{R_E/4}\right)^2
-=
-\frac1{80}(4)^2
-=
-\frac{16}{80}
-=
+\left(\frac{R_E}{R_E/4}\right)^2 \\
+&=
+\frac1{80}(4)^2 \\
+&=
+\frac{16}{80} \\
+&=
 \frac15
+\end{aligned}
 $$
 
 Hence,
