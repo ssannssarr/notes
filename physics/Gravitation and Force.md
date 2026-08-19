@@ -309,16 +309,12 @@ $$
 =
 \frac1{80}
 \left(\frac{R_E}{R_E/4}\right)^2
-$$
-
-$$
 =
 \frac1{80}(4)^2
-$$
-
-$$
-=\frac{16}{80}
-=\frac15
+=
+\frac{16}{80}
+=
+\frac15
 $$
 
 Hence,
