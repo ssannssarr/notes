@@ -138,7 +138,7 @@ $$
 Therefore,
 
 $$
-\boxed{[g]=[M⁰LT^{-2}]}
+\boxed{[g]=[LT^{-2}]}
 $$
 
 ---
@@ -457,8 +457,8 @@ $$
 |---|---|---|---|
 | Force | $F=ma$ | N | $[MLT^{-2}]$ |
 | Gravitational force | $F=G\dfrac{m_1m_2}{r^2}$ | N | $[MLT^{-2}]$ |
-| Gravitational constant | $G=\dfrac{Fr^2}{m_1m_2}$ | N m² kg⁻² | $[M^{-1}L^3T^{-2}]$ |
-| Acceleration due to gravity | $g=\dfrac{GM}{R^2}$ | m/s² | $[LT^{-2}]$ |
+| Gravitational constant | $G=\dfrac{Fr^2}{m_1m_2}$ | N m^2 kg^-2 | $[M^{-1}L^3T^{-2}]$ |
+| Acceleration due to gravity | $g=\dfrac{GM}{R^2}$ | m/s^2 | $[LT^{-2}]$ |
 | Weight | $W=mg$ | N | $[MLT^{-2}]$ |
 
 ## Constants
