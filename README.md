@@ -1,0 +1,14 @@
+# Welcome to Notes 
+
+This repo is collection of class-notes for CO/CI diploma of CITK.<br>
+You can find the notes in this repo.
+
+## Contents
+- [Physics](./physics/)
+- [Mathematics](./math/)
+- [Chemistry](./chemistry/)
+- [English](./english/)
+
+## Contribution
+
+If you find any mistakes correct the markdown files by making [GitHub](https://github.com) account.
