@@ -4,7 +4,7 @@ This repo is collection of class-notes for CO/CI diploma of CITK.<br>
 You can find the notes in this repo.
 
 ## Contents
-- [Physics](./physics/)
+- [Physics](./physics/README.md) 
 - [Mathematics](./math/)
 - [Chemistry](./chemistry/)
 - [English](./english/)
