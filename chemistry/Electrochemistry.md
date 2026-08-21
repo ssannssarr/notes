@@ -99,7 +99,7 @@ $\$2Cl^- \rightarrow Cl_2 + 2e^-$$
 
 ### 🔬 Faraday's First Law
 
-**Statement:** The mass of a substance deposited or liberated at any electrode during electrolysis is **directly proportional** to the **quantity of electricity** passed through the electrolyte.
+>The mass of a substance deposited or liberated at any electrode during electrolysis is **directly proportional** to the **quantity of electricity** passed through the electrolyte.
 
 **Mathematical Form:**
 $$W \propto Q$$
@@ -128,7 +128,7 @@ Where:
 
 ### 🔬 Faraday's Second Law
 
-**Statement:** When the **same quantity of electricity** is passed through **different electrolytic solutions** connected in **series**, the ratio of the weights of different substances deposited at different electrodes is **equal to the ratio of their equivalent weights**.
+>When the **same quantity of electricity** is passed through **different electrolytic solutions** connected in **series**, the ratio of the weights of different substances deposited at different electrodes is **equal to the ratio of their equivalent weights**.
 
 **Mathematical Form:**
 $$\frac{W_1}{W_2} = \frac{E_1}{E_2}$$
