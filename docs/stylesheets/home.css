@@ -1,5 +1,15 @@
-.md-header__inner {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+.md-header {
+    background: rgba(000, 000, 000, 0.60);
+}
+
+/* Apply only when the slate (dark) scheme is active */
+[data-md-color-scheme="slate"] {
+    
+  --md-default-bg-color: #000000;
+  --md-default-bg-color--light: #1a1a1a;
+  --md-default-bg-color--lighter: #333333;
+  --md-default-bg-color--lightest: #4d4d4d;
+  --md-code-bg-color: #111111;
+  --md-footer-bg-color: #000000;
+  --md-footer-bg-color--dark: #000000;
 }

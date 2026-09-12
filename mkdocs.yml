@@ -2,6 +2,8 @@ site_name: CITK NOTES HUB
 site_url: https://ssannssarr.github.io/notes
 theme:
     name: material
+    icon:
+      logo: material/library-outline
     palette:
         
         - media: "(prefers-color-scheme)"
@@ -11,12 +13,16 @@ theme:
         
         - media: "(prefers-color-scheme: light)"
           scheme: default
+          primary: black
+          accent: amber
           toggle:
             icon: material/toggle-switch
             name: Switch to dark mode
             
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
+          primary: black
+          accent: amber
           toggle: 
             icon: material/toggle-switch-off-outline
             name: Switch to light mode
@@ -32,4 +38,4 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
-  #- stylesheets/home.css
+  - stylesheets/home.css
