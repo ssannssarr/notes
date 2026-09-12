@@ -1,7 +1,8 @@
 site_name: CITK NOTES HUB
-site_url: https://ssannssarr.github.io/notes
+site_url: https://ssannssarr.github.io/notes/
 theme:
     name: material
+    custom_dir: overrides
     icon:
       logo: material/library-outline
     palette:
