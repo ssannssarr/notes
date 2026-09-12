@@ -1,0 +1,2207 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ssannssarr.github.io/notes/1st%20SEM/DMA101/Partial-Fractions/">
+      
+      
+        <link rel="prev" href="../Complex-numbers/">
+      
+      
+        <link rel="next" href="../../DPH101/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Comprehensive Notes on Partial Fraction Decomposition - CITK NOTES HUB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/home.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comprehensive-notes-on-partial-fraction-decomposition" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="CITK NOTES HUB" class="md-header__button md-logo" aria-label="CITK NOTES HUB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.24 11.24 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CITK NOTES HUB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comprehensive Notes on Partial Fraction Decomposition
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CITK NOTES HUB" class="md-nav__button md-logo" aria-label="CITK NOTES HUB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.24 11.24 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24"/></svg>
+
+    </a>
+    CITK NOTES HUB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1st SEM
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1st SEM
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DCH101
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DCH101
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chemistry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/Electrochemistry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡ Electrochemistry - Complete Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/Fuels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detailed Study Notes: Fuels, Classification, and Combustion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/Organic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organic Chemistry Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/lubricants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit: Lubricants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DCH101/lab/prac1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prac1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DHS101
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DHS101
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DHS101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DHS101/Skill-and-Linguistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DHS101 — Communication &amp; Language Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DHS101/communication-process-%26-barries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Communication Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DMA101
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DMA101
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complex-numbers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex Numbers — Revision Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprehensive Notes on Partial Fraction Decomposition
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprehensive Notes on Partial Fraction Decomposition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fundamental-definitions-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fundamental Definitions &amp; Classifications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Fundamental Definitions &amp; Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-proper-fractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Proper Fractions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-improper-fractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Improper Fractions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-classification-of-types-solved-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Classification of Types &amp; Solved Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Classification of Types &amp; Solved Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-i-non-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type I: Non-Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type I: Non-Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-two-distinct-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Two Distinct Linear Factors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-three-distinct-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Three Distinct Linear Factors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-three-factors-including-a-monomial-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Three Factors including a Monomial Factor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-general-symbolic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: General Symbolic Formula
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-ii-improper-fractions-with-non-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type II: Improper Fractions with Non-Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type II: Improper Fractions with Non-Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-iii-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type III: Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type III: Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-iv-non-repeated-quadratic-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type IV: Non-Repeated Quadratic Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type IV: Non-Repeated Quadratic Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-general-step-by-step-problem-solving-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. General Step-by-Step Problem Solving Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DPH101
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DPH101
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DPH101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DPH101/Elasticity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elasticity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DPH101/Gravitation-and-Force/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gravitation and Force
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mid Sem QP's
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mid Sem QP's
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mid%20Sem%20QP%27s/DMA101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DMA101
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fundamental-definitions-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fundamental Definitions &amp; Classifications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Fundamental Definitions &amp; Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-proper-fractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Proper Fractions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-improper-fractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Improper Fractions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-classification-of-types-solved-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Classification of Types &amp; Solved Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Classification of Types &amp; Solved Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-i-non-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type I: Non-Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type I: Non-Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-two-distinct-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Two Distinct Linear Factors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-three-distinct-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Three Distinct Linear Factors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-three-factors-including-a-monomial-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Three Factors including a Monomial Factor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-general-symbolic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: General Symbolic Formula
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-ii-improper-fractions-with-non-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type II: Improper Fractions with Non-Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type II: Improper Fractions with Non-Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-iii-repeated-linear-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type III: Repeated Linear Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type III: Repeated Linear Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-iv-non-repeated-quadratic-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type IV: Non-Repeated Quadratic Factors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type IV: Non-Repeated Quadratic Factors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Form:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-general-step-by-step-problem-solving-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. General Step-by-Step Problem Solving Strategy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="comprehensive-notes-on-partial-fraction-decomposition">Comprehensive Notes on Partial Fraction Decomposition</h1>
+<hr />
+<h2 id="1-fundamental-definitions-classifications">1. Fundamental Definitions &amp; Classifications</h2>
+<p>A <strong>rational function</strong> (or rational fraction) is an expression of the form:
+$<span class="arithmatex">\(\frac{f(x)}{g(x)}\)</span>$
+where <span class="arithmatex">\(f(x)\)</span> and <span class="arithmatex">\(g(x)\)</span> are polynomials, with <span class="arithmatex">\(g(x) \neq 0\)</span>.</p>
+<h3 id="a-proper-fractions"><strong>A. Proper Fractions</strong></h3>
+<p>A rational fraction <span class="arithmatex">\(\frac{f(x)}{g(x)}\)</span> is called a <strong>proper fraction</strong> if the degree of the numerator <span class="arithmatex">\(f(x)\)</span> is strictly less than the degree of the denominator <span class="arithmatex">\(g(x)\)</span>:
+$<span class="arithmatex">\(\deg(f(x)) &lt; \deg(g(x))\)</span>$</p>
+<ul>
+<li><strong>Examples:</strong></li>
+<li><span class="arithmatex">\(\frac{x}{x^2 + 4x + 4}\)</span></li>
+<li><span class="arithmatex">\(\frac{x}{x^2 + 1}\)</span></li>
+</ul>
+<hr />
+<h3 id="b-improper-fractions"><strong>B. Improper Fractions</strong></h3>
+<p>A rational fraction <span class="arithmatex">\(\frac{f(x)}{g(x)}\)</span> is called an <strong>improper fraction</strong> if the degree of the numerator <span class="arithmatex">\(f(x)\)</span> is greater than or equal to the degree of the denominator <span class="arithmatex">\(g(x)\)</span>:
+$<span class="arithmatex">\(\deg(f(x)) \ge \deg(g(x))\)</span>$</p>
+<ul>
+<li><strong>Examples:</strong></li>
+<li><span class="arithmatex">\(\frac{x^2 + 1}{x^2 + 3x + 2}\)</span></li>
+<li><span class="arithmatex">\(\frac{x^3 - 7x + 1}{x^3 + 2x^2 + 9}\)</span></li>
+</ul>
+<blockquote>
+<p><strong>Handling Improper Fractions:</strong><br />
+Prior to decomposing an improper fraction into partial fractions, perform <strong>polynomial long division</strong> to rewrite it as:
+$<span class="arithmatex">\(\frac{f(x)}{g(x)} = Q(x) + \frac{R(x)}{g(x)}\)</span>$
+where <span class="arithmatex">\(Q(x)\)</span> is the quotient polynomial and <span class="arithmatex">\(\frac{R(x)}{g(x)}\)</span> is a proper fraction (i.e., <span class="arithmatex">\(\deg(R(x)) &lt; \deg(g(x))\)</span>). Apply partial fraction decomposition to <span class="arithmatex">\(\frac{R(x)}{g(x)}\)</span>.</p>
+</blockquote>
+<hr />
+<h2 id="2-classification-of-types-solved-examples">2. Classification of Types &amp; Solved Examples</h2>
+<hr />
+<h3 id="type-i-non-repeated-linear-factors"><strong>Type I: Non-Repeated Linear Factors</strong></h3>
+<h4 id="form"><strong>Form:</strong></h4>
+<div class="arithmatex">\[\frac{f(x)}{(ax + b)(cx + d)(ex + f)} = \frac{A}{ax + b} + \frac{B}{cx + d} + \frac{C}{ex + f}\]</div>
+<hr />
+<h4 id="example-1-two-distinct-linear-factors"><strong>Example 1: Two Distinct Linear Factors</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x}{(x+1)(x-2)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the partial fraction equation:
+   $<span class="arithmatex">\(\frac{x}{(x+1)(x-2)} = \frac{A}{x+1} + \frac{B}{x-2} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Combine terms over a common denominator:
+   $<span class="arithmatex">\(\frac{x}{(x+1)(x-2)} = \frac{A(x-2) + B(x+1)}{(x+1)(x-2)}\)</span>$</p>
+</li>
+<li>
+<p>Equate the numerators:
+   $<span class="arithmatex">\(A(x-2) + B(x+1) = x \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants by substitution:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = 2\)</span> in (2):</strong>
+     $<span class="arithmatex">\(A(0) + B(2+1) = 2 \implies 3B = 2 \implies B = \frac{2}{3}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = -1\)</span> in (2):</strong>
+     $<span class="arithmatex">\(A(-1-2) + B(0) = -1 \implies -3A = -1 \implies A = \frac{1}{3}\)</span>$</p>
+</li>
+<li>
+<p>Substitute constants back into (1):
+   $<span class="arithmatex">\(\frac{x}{(x+1)(x-2)} = \frac{1/3}{x+1} + \frac{2/3}{x-2}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-2-three-distinct-linear-factors"><strong>Example 2: Three Distinct Linear Factors</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2}{(x+1)(x+2)(x-3)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the equation:
+   $<span class="arithmatex">\(\frac{x^2}{(x+1)(x+2)(x-3)} = \frac{A}{x+1} + \frac{B}{x+2} + \frac{C}{x-3} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(x+2)(x-3) + B(x+1)(x-3) + C(x+1)(x+2) = x^2 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = -1\)</span>:</strong><br />
+     $<span class="arithmatex">\(A(-1+2)(-1-3) = (-1)^2 \implies A(1)(-4) = 1 \implies -4A = 1 \implies A = -\frac{1}{4}\)</span>$</li>
+<li><strong>Set <span class="arithmatex">\(x = -2\)</span>:</strong><br />
+     $<span class="arithmatex">\(B(-2+1)(-2-3) = (-2)^2 \implies B(-1)(-5) = 4 \implies 5B = 4 \implies B = \frac{4}{5}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = 3\)</span>:</strong><br />
+     $<span class="arithmatex">\(C(3+1)(3+2) = (3)^2 \implies C(4)(5) = 9 \implies 20C = 9 \implies C = \frac{9}{20}\)</span>$</p>
+</li>
+<li>
+<p>Final decomposition:
+   $<span class="arithmatex">\(\frac{x^2}{(x+1)(x+2)(x-3)} = \frac{-1/4}{x+1} + \frac{4/5}{x+2} + \frac{9/20}{x-3}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-3-three-factors-including-a-monomial-factor"><strong>Example 3: Three Factors including a Monomial Factor</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2 + 1}{x(x+1)(x-2)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the decomposition:
+   $<span class="arithmatex">\(\frac{x^2 + 1}{x(x+1)(x-2)} = \frac{A}{x} + \frac{B}{x+1} + \frac{C}{x-2} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(x+1)(x-2) + Bx(x-2) + Cx(x+1) = x^2 + 1 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = 0\)</span>:</strong><br />
+     $<span class="arithmatex">\(A(1)(-2) = 0^2 + 1 \implies -2A = 1 \implies A = -\frac{1}{2}\)</span>$</li>
+<li><strong>Set <span class="arithmatex">\(x = -1\)</span>:</strong><br />
+     $<span class="arithmatex">\(B(-1)(-1-2) = (-1)^2 + 1 \implies 3B = 2 \implies B = \frac{2}{3}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = 2\)</span>:</strong><br />
+     $<span class="arithmatex">\(C(2)(2+1) = 2^2 + 1 \implies 6C = 5 \implies C = \frac{5}{6}\)</span>$</p>
+</li>
+<li>
+<p>Final decomposition:
+   $<span class="arithmatex">\(\frac{x^2 + 1}{x(x+1)(x-2)} = \frac{-1/2}{x} + \frac{2/3}{x+1} + \frac{5/6}{x-2}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-4-general-symbolic-formula"><strong>Example 4: General Symbolic Formula</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{1}{(x-a)(x-b)(x-c)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the expansion:
+   $<span class="arithmatex">\(\frac{1}{(x-a)(x-b)(x-c)} = \frac{A}{x-a} + \frac{B}{x-b} + \frac{C}{x-c}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(x-b)(x-c) + B(x-a)(x-c) + C(x-a)(x-b) = 1\)</span>$</p>
+</li>
+<li>
+<p>Evaluate at roots:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = a\)</span>:</strong> <span class="arithmatex">\(A(a-b)(a-c) = 1 \implies A = \frac{1}{(a-b)(a-c)}\)</span></li>
+<li><strong>Set <span class="arithmatex">\(x = b\)</span>:</strong> <span class="arithmatex">\(B(b-a)(b-c) = 1 \implies B = \frac{1}{(b-a)(b-c)}\)</span></li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = c\)</span>:</strong> <span class="arithmatex">\(C(c-a)(c-b) = 1 \implies C = \frac{1}{(c-a)(c-b)}\)</span></p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{1}{(x-a)(x-b)(x-c)} = \frac{1}{(a-b)(a-c)(x-a)} + \frac{1}{(b-a)(b-c)(x-b)} + \frac{1}{(c-a)(c-b)(x-c)}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h3 id="type-ii-improper-fractions-with-non-repeated-linear-factors"><strong>Type II: Improper Fractions with Non-Repeated Linear Factors</strong></h3>
+<h4 id="method"><strong>Method:</strong></h4>
+<p>Divide the numerator by the denominator using long division first to separate the polynomial part, then perform partial fraction decomposition on the remainder fraction.</p>
+<hr />
+<h4 id="example-1"><strong>Example 1:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{4x^2 + 1}{(2x+1)(x+2)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Expand the denominator:
+   $<span class="arithmatex">\((2x+1)(x+2) = 2x^2 + 5x + 2\)</span>$</p>
+<ol>
+<li>
+<p>Perform Long Division:
+   Divide <span class="arithmatex">\((4x^2 + 1)\)</span> by <span class="arithmatex">\((2x^2 + 5x + 2)\)</span>:
+   $<span class="arithmatex">\(\frac{4x^2 + 1}{2x^2 + 5x + 2} = 2 + \frac{-10x - 3}{2x^2 + 5x + 2} \quad \text{--- (1)}\)</span>$</p>
+</li>
+<li>
+<p>Decompose the remainder fraction:
+   $<span class="arithmatex">\(\frac{-10x - 3}{(2x+1)(x+2)} = \frac{A}{2x+1} + \frac{B}{x+2}\)</span>$
+   $<span class="arithmatex">\(A(x+2) + B(2x+1) = -10x - 3 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = -2\)</span>:</strong><br />
+     $<span class="arithmatex">\(B(2(-2) + 1) = -10(-2) - 3 \implies -3B = 17 \implies B = -\frac{17}{3}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = -\frac{1}{2}\)</span>:</strong><br />
+     $<span class="arithmatex">\(A\left(-\frac{1}{2} + 2\right) = -10\left(-\frac{1}{2}\right) - 3 \implies \frac{3}{2}A = 2 \implies A = \frac{4}{3}\)</span>$</p>
+</li>
+<li>
+<p>Substitute back into (1):
+   $<span class="arithmatex">\(\frac{4x^2 + 1}{(2x+1)(x+2)} = 2 + \frac{4/3}{2x+1} - \frac{17/3}{x+2}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-2"><strong>Example 2:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^3 + 7x + 1}{x^2 + 5x + 6}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Perform Long Division:
+   $<span class="arithmatex">\(\frac{x^3 + 7x + 1}{x^2 + 5x + 6} = x - 5 + \frac{26x + 31}{x^2 + 5x + 6} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Factor denominator and set up partial fractions for the remainder:
+   $<span class="arithmatex">\(\frac{26x + 31}{(x+2)(x+3)} = \frac{A}{x+2} + \frac{B}{x+3}\)</span>$
+   $<span class="arithmatex">\(A(x+3) + B(x+2) = 26x + 31 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = -2\)</span>:</strong><br />
+     $<span class="arithmatex">\(A(-2+3) = 26(-2) + 31 \implies A = -21\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = -3\)</span>:</strong><br />
+     $<span class="arithmatex">\(B(-3+2) = 26(-3) + 31 \implies -B = -47 \implies B = 47\)</span>$</p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{x^3 + 7x + 1}{x^2 + 5x + 6} = x - 5 - \frac{21}{x+2} + \frac{47}{x+3}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-3"><strong>Example 3:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2}{(3x+2)(2x+3)}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Expand denominator:
+   $<span class="arithmatex">\((3x+2)(2x+3) = 6x^2 + 13x + 6\)</span>$</p>
+<ol>
+<li>
+<p>Perform Long Division:
+   $<span class="arithmatex">\(\frac{x^2}{6x^2 + 13x + 6} = \frac{1}{6} + \frac{-\frac{13}{6}x - 1}{6x^2 + 13x + 6} \quad \text{--- (1)}\)</span>$</p>
+</li>
+<li>
+<p>Decompose the remainder fraction:
+   $<span class="arithmatex">\(\frac{-\frac{13}{6}x - 1}{(3x+2)(2x+3)} = \frac{A}{3x+2} + \frac{B}{2x+3}\)</span>$
+   $<span class="arithmatex">\(A(2x+3) + B(3x+2) = -\frac{13}{6}x - 1 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = -\frac{2}{3}\)</span>:</strong><br />
+     $<span class="arithmatex">\(A\left(2\left(-\frac{2}{3}\right)+3\right) = -\frac{13}{6}\left(-\frac{2}{3}\right)-1 \implies \frac{5}{3}A = \frac{4}{9} \implies A = \frac{1}{3}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = -\frac{3}{2}\)</span>:</strong><br />
+     $<span class="arithmatex">\(B\left(3\left(-\frac{3}{2}\right)+2\right) = -\frac{13}{6}\left(-\frac{3}{2}\right)-1 \implies -\frac{5}{2}B = \frac{9}{4} \implies B = -\frac{9}{10}\)</span>$</p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{x^2}{(3x+2)(2x+3)} = \frac{1}{6} + \frac{1/3}{3x+2} - \frac{9/10}{2x+3}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h3 id="type-iii-repeated-linear-factors"><strong>Type III: Repeated Linear Factors</strong></h3>
+<h4 id="form_1"><strong>Form:</strong></h4>
+<p>If <span class="arithmatex">\(g(x) = (ax + b)(cx + d)^n\)</span>, assume:
+$<span class="arithmatex">\(\frac{f(x)}{g(x)} = \frac{A}{ax + b} + \frac{B}{cx + d} + \frac{C}{(cx + d)^2} + \dots + \frac{Z}{(cx + d)^n}\)</span>$</p>
+<blockquote>
+<p><strong>Note:</strong> Direct substitution alone is usually insufficient to determine all constants in repeated factor cases. Combine substitution with <strong>equating coefficients of like powers of <span class="arithmatex">\(x\)</span></strong>.</p>
+</blockquote>
+<hr />
+<h4 id="example-1_1"><strong>Example 1:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2}{(x+1)(x-1)^2}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the equation:
+   $<span class="arithmatex">\(\frac{x^2}{(x+1)(x-1)^2} = \frac{A}{x+1} + \frac{B}{x-1} + \frac{C}{(x-1)^2} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(x-1)^2 + B(x+1)(x-1) + C(x+1) = x^2 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Find constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = 1\)</span> in (2):</strong><br />
+     $<span class="arithmatex">\(C(1+1) = 1^2 \implies 2C = 1 \implies C = \frac{1}{2}\)</span>$</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = -1\)</span> in (2):</strong><br />
+     $<span class="arithmatex">\(A(-1-1)^2 = (-1)^2 \implies 4A = 1 \implies A = \frac{1}{4}\)</span>$</p>
+</li>
+<li>
+<p>Expand terms in (2) to solve for <span class="arithmatex">\(B\)</span>:
+   $<span class="arithmatex">\(A(x^2 - 2x + 1) + B(x^2 - 1) + C(x + 1) = x^2\)</span>$
+   $<span class="arithmatex">\((A + B)x^2 + (-2A + C)x + (A - B + C) = x^2\)</span>$</p>
+</li>
+<li>
+<p>Equate coefficients of <span class="arithmatex">\(x^2\)</span>:
+   $<span class="arithmatex">\(A + B = 1 \implies \frac{1}{4} + B = 1 \implies B = \frac{3}{4}\)</span>$</p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{x^2}{(x+1)(x-1)^2} = \frac{1/4}{x+1} + \frac{3/4}{x-1} + \frac{1/2}{(x-1)^2}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-2_1"><strong>Example 2:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2 + 4x + 1}{(1-x)^4}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the equation:
+   $<span class="arithmatex">\(\frac{x^2 + 4x + 1}{(1-x)^4} = \frac{A}{1-x} + \frac{B}{(1-x)^2} + \frac{C}{(1-x)^3} + \frac{D}{(1-x)^4} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(1-x)^3 + B(1-x)^2 + C(1-x) + D = x^2 + 4x + 1 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Solve for <span class="arithmatex">\(D\)</span>:</p>
+</li>
+<li>
+<p><strong>Set <span class="arithmatex">\(x = 1\)</span>:</strong><br />
+     $<span class="arithmatex">\(D = 1^2 + 4(1) + 1 = 6\)</span>$</p>
+</li>
+<li>
+<p>Expand polynomial terms to find <span class="arithmatex">\(A, B, C\)</span>:
+   $<span class="arithmatex">\(A(1 - 3x + 3x^2 - x^3) + B(1 - 2x + x^2) + C(1 - x) + D = x^2 + 4x + 1\)</span>$
+   $<span class="arithmatex">\((-A)x^3 + (3A + B)x^2 + (-3A - 2B - C)x + (A + B + C + D) = x^2 + 4x + 1\)</span>$</p>
+</li>
+<li>
+<p>Equate coefficients of like powers:</p>
+</li>
+<li><strong>Coefficient of <span class="arithmatex">\(x^3\)</span>:</strong><br />
+     $<span class="arithmatex">\(-A = 0 \implies A = 0\)</span>$</li>
+<li><strong>Coefficient of <span class="arithmatex">\(x^2\)</span>:</strong><br />
+     $<span class="arithmatex">\(3A + B = 1 \implies 3(0) + B = 1 \implies B = 1\)</span>$</li>
+<li>
+<p><strong>Coefficient of <span class="arithmatex">\(x\)</span>:</strong><br />
+     $<span class="arithmatex">\(-3A - 2B - C = 4 \implies -3(0) - 2(1) - C = 4 \implies -2 - C = 4 \implies C = -6\)</span>$</p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{x^2 + 4x + 1}{(1-x)^4} = \frac{1}{(1-x)^2} - \frac{6}{(1-x)^3} + \frac{6}{(1-x)^4}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h4 id="example-3_1"><strong>Example 3:</strong></h4>
+<p>Resolve <span class="arithmatex">\(\frac{x^2 + 2x + 3}{(x+1)^3}\)</span> into partial fractions.</p>
+<p><strong>Solution:</strong>
+1. Set up the expansion:
+   $<span class="arithmatex">\(\frac{x^2 + 2x + 3}{(x+1)^3} = \frac{A}{x+1} + \frac{B}{(x+1)^2} + \frac{C}{(x+1)^3} \quad \text{--- (1)}\)</span>$</p>
+<ol>
+<li>
+<p>Equate numerators:
+   $<span class="arithmatex">\(A(x+1)^2 + B(x+1) + C = x^2 + 2x + 3 \quad \text{--- (2)}\)</span>$</p>
+</li>
+<li>
+<p>Find constants:</p>
+</li>
+<li><strong>Set <span class="arithmatex">\(x = -1\)</span>:</strong><br />
+     $<span class="arithmatex">\(C = (-1)^2 + 2(-1) + 3 = 1 - 2 + 3 = 2\)</span>$</li>
+<li>Expand (2):<br />
+     $<span class="arithmatex">\(A(x^2 + 2x + 1) + B(x + 1) + C = x^2 + 2x + 3\)</span>$
+     $<span class="arithmatex">\(Ax^2 + (2A + B)x + (A + B + C) = x^2 + 2x + 3\)</span>$</li>
+<li><strong>Equate coefficient of <span class="arithmatex">\(x^2\)</span>:</strong><br />
+     $<span class="arithmatex">\(A = 1\)</span>$</li>
+<li>
+<p><strong>Equate coefficient of <span class="arithmatex">\(x\)</span>:</strong><br />
+     $<span class="arithmatex">\(2A + B = 2 \implies 2(1) + B = 2 \implies B = 0\)</span>$</p>
+</li>
+<li>
+<p>Verification:
+   $<span class="arithmatex">\(\text{RHS} = \frac{1}{x+1} + \frac{2}{(x+1)^3} = \frac{(x+1)^2 + 2}{(x+1)^3} = \frac{x^2 + 2x + 1 + 2}{(x+1)^3} = \frac{x^2 + 2x + 3}{(x+1)^3} \quad \text{(Matches LHS)}\)</span>$</p>
+</li>
+<li>
+<p>Final Result:
+   $<span class="arithmatex">\(\frac{x^2 + 2x + 3}{(x+1)^3} = \frac{1}{x+1} + \frac{2}{(x+1)^3}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h3 id="type-iv-non-repeated-quadratic-factors"><strong>Type IV: Non-Repeated Quadratic Factors</strong></h3>
+<h4 id="form_2"><strong>Form:</strong></h4>
+<p>If <span class="arithmatex">\(g(x)\)</span> contains an irreducible quadratic factor <span class="arithmatex">\(bx^2 + cx + d\)</span> (i.e. cannot be factored into real linear factors), assign a linear numerator <span class="arithmatex">\(Bx + C\)</span>:
+$<span class="arithmatex">\(\frac{f(x)}{(x+a)(bx^2 + cx + d)} = \frac{A}{x+a} + \frac{Bx + C}{bx^2 + cx + d}\)</span>$</p>
+<hr />
+<h2 id="3-general-step-by-step-problem-solving-strategy">3. General Step-by-Step Problem Solving Strategy</h2>
+<ol>
+<li><strong>Check Fraction Type:</strong><br />
+   Compare <span class="arithmatex">\(\deg(f(x))\)</span> and <span class="arithmatex">\(\deg(g(x))\)</span>. If <span class="arithmatex">\(\deg(f(x)) \ge \deg(g(x))\)</span>, perform <strong>long division</strong> first.</li>
+<li><strong>Factor Denominator:</strong><br />
+   Factor <span class="arithmatex">\(g(x)\)</span> completely into linear and irreducible quadratic factors.</li>
+<li><strong>Set Up Partial Fraction Expression:</strong>  </li>
+<li>Linear factor <span class="arithmatex">\((ax+b) \implies \frac{A}{ax+b}\)</span></li>
+<li>Repeated linear factor <span class="arithmatex">\((ax+b)^n \implies \frac{A_1}{ax+b} + \frac{A_2}{(ax+b)^2} + \dots + \frac{A_n}{(ax+b)^n}\)</span></li>
+<li>Irreducible quadratic factor <span class="arithmatex">\((ax^2+bx+c) \implies \frac{Ax+B}{ax^2+bx+c}\)</span></li>
+<li><strong>Form Algebraic Equation:</strong><br />
+   Multiply through by <span class="arithmatex">\(g(x)\)</span> to clear all denominators.</li>
+<li><strong>Solve for Unknown Constants:</strong>  </li>
+<li>Substitute roots of linear factors to isolate constants directly.</li>
+<li>Expand terms and equate coefficients of corresponding powers of <span class="arithmatex">\(x\)</span> to solve remaining linear systems.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
