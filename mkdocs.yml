@@ -1,5 +1,9 @@
 site_name: CITK NOTES HUB
 site_url: https://ssannssarr.github.io/notes/
+
+repo_nane: ssannssarr/notes
+repo_url: https://github.com/ssannssarr/notes/
+
 theme:
     name: material
     custom_dir: overrides
@@ -9,7 +13,7 @@ theme:
         
         - media: "(prefers-color-scheme)"
           toggle:
-            icon: material/brightness-auto
+            icon: material/link
             name: Switch to light mode
         
         - media: "(prefers-color-scheme: light)"
@@ -27,6 +31,9 @@ theme:
           toggle: 
             icon: material/toggle-switch-off-outline
             name: Switch to light mode
+
+plugins:
+    - search
 
 markdown_extensions:
   - pymdownx.arithmatex:
