@@ -11,6 +11,8 @@ theme:
         - search.highlight
         - search.share
         - navigation.instant
+        - navigation.indexes
+        - navigation.footer
         #- navigation.sections
         #- navigation.expand
         - navigation.instant.progress
