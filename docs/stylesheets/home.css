@@ -1,8 +1,6 @@
-.md-header {
-    background: rgba(000, 000, 000, 0.60);
-}
 
-/* Apply only when the slate (dark) scheme is active */
+
+/* Apply only when the slate (dark) scheme is active 
 [data-md-color-scheme="slate"] {
     
   --md-default-bg-color: #000000;
@@ -13,3 +11,4 @@
   --md-footer-bg-color: #000000;
   --md-footer-bg-color--dark: #000000;
 }
+*/
