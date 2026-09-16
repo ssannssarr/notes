@@ -11,7 +11,7 @@ theme:
         - search.highlight
         - search.share
         - navigation.instant
-        - navigation.indexes
+        #- navigation.indexes
         - navigation.footer
         #- navigation.sections
         #- navigation.expand
@@ -71,3 +71,5 @@ extra:
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/ssannssarr/notes
+        - icon: fontawesome/brands/instagram
+          link: https://www.instagram.com/ssannssarrai
