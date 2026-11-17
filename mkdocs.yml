@@ -59,12 +59,14 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/katex.js
+  - javascripts/sidebar-toggle.js?v=5
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/home.css
+  - stylesheets/sidebar-toggle.css?v=5
   
 
 extra:

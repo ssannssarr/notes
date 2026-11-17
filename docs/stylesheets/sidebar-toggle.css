@@ -1,0 +1,70 @@
+/* Collapsible sidebars (desktop) */
+
+@media screen and (min-width: 76.25em) {
+  /* Animate the sidebar columns closed so the content area grows smoothly. */
+  .md-sidebar {
+    transition:
+      width 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 180ms ease,
+      transform 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s;
+  }
+
+  html.sidebar-primary-collapsed .md-sidebar--primary {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-0.6rem);
+    transition:
+      width 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 180ms ease,
+      transform 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s linear 380ms;
+  }
+
+  html.sidebar-secondary-collapsed .md-sidebar--secondary {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0.6rem);
+    transition:
+      width 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 180ms ease,
+      transform 380ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s linear 380ms;
+  }
+
+  /* Let the reading column fill (and stay centered in) all freed space. */
+  html.sidebar-primary-collapsed .md-content__inner,
+  html.sidebar-secondary-collapsed .md-content__inner {
+    width: calc(100% - 2.4rem);
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* The toggle buttons only make sense when the sidebars are shown inline */
+@media screen and (max-width: 76.234375em) {
+  .sidebar-toggle {
+    display: none !important;
+  }
+}
+
+.sidebar-toggle {
+  transition:
+    opacity 250ms,
+    color 200ms ease;
+}
+
+.sidebar-toggle[aria-expanded="false"] {
+  color: var(--md-accent-fg-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-sidebar,
+  .sidebar-toggle {
+    transition: none;
+  }
+}
